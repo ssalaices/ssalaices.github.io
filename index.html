@@ -1,3 +1,5 @@
+<!-- 24:06 in https://www.youtube.com/watch?v=0YFrGy_mzjY -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,21 +28,87 @@
         </div>
     </div>
 </div>
-<!--ABOUT-->
+
+<!-- ABOUT -->
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/user.jpg">
+                <img src="images/user.png">
             </div>
             <div class="about-col-2">
-                <h1>About Me</h1>
+                <h1 class="sub-title">About Me</h1>
+                    <p>
+                        ╱|、<br>
+                        (˚ˎ 。7 <br> 
+                        |、˜〵 <br>     
+                        じしˍ,)ノ
+                    </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Solidworks</span><br>Designing basic part geometries and assemblies</li>
+                        <li><span>Programming</span><br> Python, C++, Unity C#, HTML, CSS, Javascript, Github</li>
+                        <li><span>3rd Skill</span><br>Description of skill</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>VR/AR IT Internship</span><br>Investigated XR technologies for education</li>
+                        <li><span>2nd Experience</span><br> Description of experience</li>
+                        <li><span>3rd Experience</span><br>Description of experience</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Texas A&M University</span><br>Bachelor of Science in Aerospace Engineering</li>
+                        <li><span>2nd Education</span><br> Description of education</li>
+                        <li><span>3rd Education</span><br>Description of education</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </div>
 </div>
 
+<!-- SERVICES -->
+<div id="services">
+    <div class="container">
+        <h1 class ="sub-title">My Services</h1>
+    </div>
+</div>
 
+<script>
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+
+
+</script>
 
 
 </body>
