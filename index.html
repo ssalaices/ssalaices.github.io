@@ -29,6 +29,7 @@
         </div>
     </div>
 </div>
+
 <!--ABOUT-->
 <div id="about">
     <div class="container">
@@ -81,11 +82,11 @@
 </div>
 
 <!-- SERVICES -->
-<div id="services">
+<!-- <div id="services">
     <div class="container">
         <h1 class ="sub-title">My Services</h1>
     </div>
-</div>
+</div> -->
 
 <script>
 
@@ -103,29 +104,41 @@
 
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
-
     }
 
+</script>
 
-
-</script><!--CONTACT-->
+<!--CONTACT-->
 
 <div id="content">
     <div class="container">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p>stefan.salaices@gmail.com</p>
-                <p>0123456789</p>
+                <p><i class="fa-solid fa-paper-plane"></i> stefan.salaices@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone-flip"></i> 0123456789</p>
                 <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://www.linkedin.com/in/stefan-salaices/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/stefan_salaices" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.youtube.com/watch?v=njBBMznh2Bg&t=467s" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                 </div>
+                <a href="images/Stefan Salaices Resume Software 2.pdf" download class="btn">Download Resume</a>
             </div>
-            <div class="contact-right"></div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
+
+    <div class="copyright">
+        <p>Made with HTML, CSS, Javascript.</p>
+    </div>
+
 </div>
 
 
